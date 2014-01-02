@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8 />
+<meta name="viewport" content="device-width" />
+<title>Sorabh Page</title>
+<style>
+*{
+	margin:0;
+	padding:0;
+	font-family:Arial,Verdana;
+	font-size:1em;
+	line-height:1.5em;
+	letter-spacing:0.08em;
+}
+body{
+	background:#f1f1f1;
+	width:100%;
+	text-align:center;
+	
+}
+#wrapper{
+	background:#fff;
+	width:998px;
+	text-align:left;
+	margin:auto;
+}
+
+#header {
+	position:relative;
+	height:150px;
+	background:#340112;
+}
+#header h1 {
+	position:absolute;
+	top:50px;
+	left:50px;
+	font-size:20px;
+	color:#FBF395;
+}
+#header ul {
+	position: absolute;
+	right:0;top:0;
+	margin:0;padding:0;
+}
+#header ul li {
+	position:relative;
+	line-height:10px;
+	float:left;
+	list-style:none;
+	padding: 5px 10px;
+	margin:0;
+	transition:0.3s all;
+}
+#header ul li:hover {
+	line-height:40px;
+	background:#000;
+}
+#header ul li a {
+	text-decoration:none;
+	color:#FBF395;
+	letter-spacing:0.07em;
+	transition:0.3s all;
+	background:transparent;
+}
+#header ul li a:hover{
+	color:#FFFCDB;
+}
+#search-box {
+	position:absolute;
+	bottom:10px;right:10px;
+	overflow:hidden;
+	transition:0.5s all;
+}
+#search-box:hover, #search-box:focus{
+	
+}
+
+#article {
+	padding: 0 20px;
+	width:678px;/*998-20=938-300=638*/
+	float:left;
+}
+#article h2 {
+	padding:15px 5px;
+	font-size:1.4em;
+	letter-spacing:0;
+}
+#article p {
+	padding-bottom:20px;
+	border-bottom:1px solid #ccc;
+}
+.cap {
+	display:block;
+	padding:0;margin:0;
+	font-size:3.4em;
+	line-height:1em;
+	float:left;	
+}
+
+#aside {
+	widht:300px;
+	float:left;
+	padding:10px;
+}
+#aside h2 {
+	padding:10px 0;
+	font-size:1.4em;
+	letter-spacing:0em;
+	color:#888;
+}
+#aside ul {
+	
+}
+#aside ul li {
+	position:relative;
+	padding-left:20px;
+	list-style:none;
+	line-height:14px;
+}
+#aside ul li:before {
+	position:absolute;
+	content:"";
+	border-top:7px solid transparent;
+	border-bottom:7px solid transparent;
+	border-left:7px solid #ddd;
+	left:0;
+	transition: 0.2s all;
+	-webkit-transition: 0.2s all;
+}
+#aside ul li:hover:before {
+	position:absolute;
+	content:"";
+	border-top:7px solid transparent;
+	border-bottom:7px solid transparent;
+	border-left:7px solid #aaa;
+	left:10px;
+}
+#aside ul li a{
+	font-size:0.8em;
+	text-decoration:none;
+	color:#ddd;
+	transition: 0.2s all;
+	-webkit-transition: 0.2s all;
+}
+#aside ul li:hover a{
+	color:#aaa;
+}
+
+#footer {
+	clear:both;
+	position:relative;
+	height:120px;
+	background:#340112;
+	color:#eee;
+	font-size:0.8em;
+}
+#footer p {
+	position:absolute;
+	right:20px;
+	bottom:10px;
+	font-style:italic;
+}
+#footer ul {
+	position:absolute;
+	right:0;
+	top:10px;
+}
+#footer ul li {
+	float:left;
+	list-style:none;
+	padding-right:10px;
+	line-height:50px;
+}
+</style>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<h1>SORABH SHARMA</h1>
+		<ul>
+			<li><a href="#home">HOME</a></li>
+			<li><a href="#portfolio>PORTFOLIO</a></li>
+			<li><a href="#about">ABOUT</a></li>
+			<li><a href="#contact">CONTACT</a></li>
+		</ul>
+		<div id="search-box">
+			<input type="text" name="search" id="search" placeholder="search...">
+			<input type="submit" name="submit" value="GO">
+		</div>
+	</div>
+	<div id="article">
+		<h2>Website Development (Designing and Programming)</h2>
+		<p><span class="cap">P</span>rogramming on different approch, the case is the same with respect to principles. When, I began the Website development and programming on different level of designing and programming tools with a varity of different languages, last year, it was my intention to have extended it to a greater length; but in casting the whole matter in my mind, which I wish to add, I found that it must either make the work too bulky, or contract my plan too much, and reserved what I had further to say to another opportunity.</p>
+		<h2>What stopping us?</h2>
+		<p><span class="cap">P</span>eople seem to get really scared when they're asked to adopt some different approches or tools, this is probably because they're afraid that they won't be able to make this done, they still don't think they can make it done by just a single twist of mind. It's not that's hard but, it's the likeness that's hard to get. "Likeness" is the quality of the excitement, desire to keep doing or playing with things.</p>
+	</div>
+	<div id="aside">
+		<h2>Some Projects:</h2>
+		<ul>
+			<li><a href="#">Online Designer(HTML5)</a></li>
+			<li><a href="#">Online Designer(FLASH)</a></li>
+			<li><a href="#">Online Designer(FLEX)</a></li>
+		</ul>
+	</div>
+	<div id="footer">
+		<ul>
+		<li>Stay with us!</li>
+		<li><a href="#"><img width="50" height="50" src="http://icons.iconarchive.com/icons/iconshock/social-media/256/linkedin-icon.png"></a></li>	
+		<li><a href="#"><img width="50" height="50" src="http://www.maartenstragier.com/images/3d-Facebook-Icon.png"></a></li>
+		<li><a href="#"><img width="50" height="50" src="http://www.buyfacebookfansandfacebooklikes.com/wp-content/uploads/2012/07/twittericon.png"></a></li>
+		</ul>
+		<p>&copy SORABH SHARMA</p>
+	</div>
+</div>
+</body>
