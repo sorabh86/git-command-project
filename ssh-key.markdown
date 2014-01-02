@@ -2,11 +2,11 @@
 
 ## Create SSH KEY
 
-@@ create ssh key as per documentation, email must be same as used for register git account.
-$ ~/.ssh >> ssh-keygen -t rsa -C "your@email.com"
-Generating public/private rsa key pair.
-Enter file in which to save the key (/home/username/.ssh/id_rsa):
-Enter passphrase (empty for no passphrase):
+>@@ create ssh key as per documentation, email must be same as used for register git account.
+>$ ~/.ssh >> ssh-keygen -t rsa -C "your@email.com"
+>Generating public/private rsa key pair.
+>Enter file in which to save the key (/home/username/.ssh/id_rsa):
+>Enter passphrase (empty for no passphrase):
 Enter same passphrase again:
 Your identification has been saved in /home/username/.ssh/id_rsa.
 Your public key has been saved in /home/username/.ssh/id_rsa.pub.
