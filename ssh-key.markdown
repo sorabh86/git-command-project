@@ -26,18 +26,22 @@ The key's randomart image is:
 +-----------------+
 
 @@ check files created
+
 $ ~/.ssh >> ls
 id_rsa  id_rsa.pub
 
 @@ copy content of id_rsa.pub and configure setting of create rsa key on github account.
+
 $ ~/.ssh >> cat id_rsa.pub
 ssh-rsa KDFJLSDJLFSJDLJFLKSJFKLSDJFLKSJLKDFJKLDJKLFJDSLKFJLKDJLFJSLDJFLSJDLFJLSDJFLDSJLFJSLDJFLDSJLFJLDSFJKLDSJFLDSJLFJLSDJFLSDJLFJDLFJLDKSJKLFSJKLDFJKDSJFLSKDFJLSKDJFLJDLKFJDSKLJFLSDJFKDSJLFJLSDKJFKDSSFKJSLDLDSJFKLDSJLFJSLDKJFLSDKJKLFDSLKFJSLDKFJSDKJFLKDJFLKDSLKFJSDKLFF your@email.com
 
 @@ check connection as per documentation.
+
 $ ~/.ssh >> ssh -T git@github.com
 Hi username! You've successfully authenticated, but GitHub does not provide shell access.
 
 @@ add ssh key to your configuation.(note if this will not work, try next command and try it again)
+
 $ ~/ >> ssh-add ~/.ssh/id_rsa
 
 $ ssh-agent -s
@@ -45,14 +49,17 @@ $ eval 'ssh-agent.exe'
 $ exec ssh-agent bash
 
 @@ check if ssh key traced your $ ssh-add /path/to/ssk-key command successfully executed.
+
 $ ssh-add -l
 
 ## Fundamentals toa access from ssh key
 
 Your path must be in format of git@github:username/projectname.git
 example :
+
 $ ~/ >> git remote add origin git@github.username/project.git
 
 @@ now you can push data using below command
+
 $ ~/ >> git push origin
 $ ~/ >> git push origin <branch>
