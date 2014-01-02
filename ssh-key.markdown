@@ -10,7 +10,7 @@ Enter passphrase (empty for no passphrase):
 Enter same passphrase again:  
 Your identification has been saved in /home/username/.ssh/id_rsa.  
 Your public key has been saved in /home/username/.ssh/id_rsa.pub.  
-The key fingerprint is: e1:e1:5b:f4:10:70:18:1d:75:63:92:ab:6a:75:ae:f2 your@email.com  
+The key fingerprint is: e1:e2:5b:f4:10:70:18:1d:74:63:92:a2:6a:73:a4:f2 your@email.com  
 The key's randomart image is:  
 +--[ RSA 2048]----+  
 |        o=+oo.+  |  
