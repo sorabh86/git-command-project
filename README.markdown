@@ -1,4 +1,4 @@
-# Read Me file
+# Git Essentials : Read Me file
 
 You are reading the README for this practise project.
 The only reason this project exists is to give the
@@ -8,4 +8,4 @@ fine viewers a means to learning the Git commands.
 Hello world.
 
 
-This is change made. May 2013.
+This is change made. May 2013. Sorabh
