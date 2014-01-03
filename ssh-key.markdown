@@ -36,6 +36,13 @@ ssh-rsa KDFJLSDJLFSJDLJFLKSJFKLSDJFLKSJLKDFJKLDJKLFJDSLKFJLKDJLFJSLDJFLSJDLFJLSD
 $ ~/.ssh >> ssh -T git@github.com  
 Hi username! You've successfully authenticated, but GitHub does not provide shell access.  
 
+This works when onces your ssh-agent is running and its added your 
+id_rsa ke. you must run "ssh-agent" first, then using "ssh-add 
+/path/to/yourkey" to added key on running agent to get it successfully 
+done.  
+Mine, on cygwin works if i used "exec ssh-agent bash" first, then 
+"ssh-add ~/.ssh/id_rsa" command.
+
 @@ add ssh key to your configuation.(note if this will not work, try next command and try it again)  
 $ ~/ >> ssh-add ~/.ssh/id_rsa  
 
