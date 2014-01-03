@@ -1,0 +1,40 @@
+You can customize your cygwin terminal to show you git branches, commit 
+changes, etc.
+There are many plugins you can used, but i want to to introduce to you 
+an specific python script can help you to watch your git repo and you 
+can add its features using unix PS1 enviroment reset as per your 
+requirements.
+
+YOU CAN FIND [VCPROMPT] TO GOOGLE
+
+Steps i follow:
+1. clone git repo from git@github.com:djl/vcprompt.git
+2. copy content of bin to your home/bin
+3. open .bashrc file
+4. add PATH='~/bin:$PATH'
+5. add PS1='\[\e]0;\w\a\]\n\[\e[1;32m\u@\h \e[1;33m\w \e[1;36m$(vcprompt 
+-f '%b%m%u')\e[0m\n\$'
+6. restart you terminal and you are done.
+
+You can customize PS1 value as you like, in my configuration let me 
+explain to you what are values.
+1. \[\e]0;\w\a] are copied from /etc/bash.bashrc file.
+2. \n for insert new line.
+3. \[ just ignore square brace, its don't have any meaning.
+4. \e[1;32m is an color value of green.
+5. \u is user name information tracer for terminal.
+6. @ is an string formating used.
+7. \h is host machine name information tracer for terminal.
+8. added space.
+9. \e[1;33m is a color value for yellow.
+10. \w is working directory information tracer for terminal.
+11. added space.
+12. \e[1;36m is a color value.
+13. $() is used for extra command access from terminal in bash script, 
+vcprompt is our program and -f is for passing formated string as 
+argument %b denotes branch name of git repo, %m denotes 
+added changes in added files on stage its show + sign, %u 
+tells us whether there is any unstage file in git repo or 
+not its show ? sign.
+14. \e[0m reset any text format.
+15. \n for new line, \$ for format $ as print statement.
