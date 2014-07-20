@@ -14,4 +14,5 @@ meta.onMetaData = function(meta:Object) {
 ns.client = meta;
 
 video.attachNetStream(ns);
-video.play('myfile.flv');
+
+ns.play('myfile.flv');
