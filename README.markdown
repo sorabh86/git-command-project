@@ -19,6 +19,9 @@ $ git commit -m 'describe your changes'
 # short code for add file to stage and commit
 $ git commit -am 'your changes'
 
+# create new branch
+$ git checkout -b <name_of_your_new_branch>
+
 # list branches
 $ git branch
 
